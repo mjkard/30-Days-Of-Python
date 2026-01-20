@@ -1,5 +1,6 @@
 # Day 2: 30 days of Python Programming
 # Exercise - 1
+#Declaring variables
 first_name = 'Muhammad'
 last_name = 'Gulma'
 full_name = 'Muhammad Gulma'
@@ -11,6 +12,9 @@ is_married = False
 is_true = True
 is_light_on = True
 education = {'primary school' : 'Vital years', 'Sec_school': 'Zaria Academy', 'College' : 'Ruhr University'}
+# Or anothe method of declarying multiple variables in a single line is:
+name, age, country, city, house_no = "Muhammad", 330, "Nigeria", "Kebbi", 26
+print(name, age, country, city, house_no)
 #Exercise -2
 print(education)
 >>> #Exercise -2
@@ -45,15 +49,18 @@ False
 4 5
 >>> reminder = num_one % num_two
 >>> print('reminder: ', reminder)
-#exercise 2 task 12
+#exercise 2 task 
+#calculating area of a circle
 >>> circle_radius = 30
 >>> area_circle = 3.14 * circle_radius**2
 >>> print('area of the circle is: ', area_circle)
 area of the circle is:  2826.0
+#calculating circumference of a circle
 >>> circum_of_circle = 2*3.14*circule_radius
 circum_of_circle = 2*3.14*circle_radius
 >>> print("circumference is: ", circum_of_circle)
 circumference is:  188.4
+#calculating area of a circle from user prompted data
 >>> radius = input("What's the radius: ")
 What's the radius: 20
 >>> area= 3.14 * radius **2
