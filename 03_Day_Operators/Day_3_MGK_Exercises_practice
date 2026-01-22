@@ -1,0 +1,31 @@
+#After Studying Bollean Operators
+age = 26 #Variable declaration for age
+height = 1.80
+complex_no = 2 + 3j
+#Simple prompt program for finding Area of a Triangle
+print('Simple prompt program for finding Area of a Triangle')
+height = input('Type in height:')
+height = float(height)
+base = input('type in length of the base:')
+base = float(base)
+triangle_area = 0.5 * height * base
+print('The area of your triangle is:', triangle_area, '\nThank you for using our software!')
+#Program ran successfully!
+#Next
+print('Program for Calculating the Perimeter of a Triangle')
+side_a = input('Please type in length of first side:')
+side_b = input('Type in length of second side:')
+side_c = input('Type in length of third side:')
+side_a = float(side_a)
+side_b = float(side_b)
+side_c = float(side_c)
+triangle_perimeter = side_a + side_b + side_c
+print('The perimeter of your triangle is:',triangle_perimeter,'\nThank you for using our software!')
+#Program ran successfully!
+#Next
+print('Program for calculating Area and Perimeter of a Rectangle')
+length = float(input('Type in rectangle length please:'))
+width = float(input('Type in rectangle width please:'))
+rect_perimeter = 2 * (length + width)
+rect_area = length * width
+print('Area of Rectangle:',rect_area,'\nPerimeter of Rectangle:', rect_perimeter,'\nThank you for using our services!')
