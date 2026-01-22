@@ -1,0 +1,10 @@
+print('Code to Calculate the value of y (y = x^2 + 6x + 9) and figure out at what value of x is y tend towards zero')
+x = float(input('Please input a value for x:'))
+y = x**2 + 6*x + 9
+print('The counter value of y is:', y)
+if y == 0:
+    print("You've got it! at x =", x,'y is zero!!')
+else:
+    print('Try again please')
+#Therefore @ x=-3, y = 0!!
+#Program was a success!
