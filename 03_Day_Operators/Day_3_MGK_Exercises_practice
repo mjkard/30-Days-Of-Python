@@ -29,3 +29,36 @@ width = float(input('Type in rectangle width please:'))
 rect_perimeter = 2 * (length + width)
 rect_area = length * width
 print('Area of Rectangle:',rect_area,'\nPerimeter of Rectangle:', rect_perimeter,'\nThank you for using our services!')
+#Next
+print('Program for calculating Area and circumference of a circle')
+radius = float(input('Enter radius of your circle please:'))
+pi = 3.14
+circle_area = pi * radius**2
+Circle_circumference = 2 * pi * radius
+print('Area of circle:',circle_area,'\nCircumference of circle:',circle_circumference,'\nThank you for using our services!')
+#Program ran successfully!
+#Next
+print('Program for calculating Area and circumference of a circle')
+radius = float(input('Enter radius of your circle please:'))
+pi = 3.14
+circle_area = pi * radius**2
+circle_circumference = 2 * pi * radius
+print('Area of circle:',circle_area,'\nCircumference of circle:',circle_circumference,'\nThank you for using our services!')
+#Program ran successfully!
+print('Next: Calculate:\n1)the slope, \n2)X-intercept and \n3)Y-intercept of [y = 2x -2]\n---SO LETS GET STARTED---')
+print('1)Finding the Slope\nFrom [y = mx + c]\nwhere m = slope (slope_m\nThe slope from [y = 2x -2] is simply 2')
+print('2) Finding the Y-intercept')
+slope_m = 2
+print('This is always where the line intercept the X-axis\nWhich is simply at x = 0\ni.e(c) from [y = mx + c]')
+print('Therefore from [y = 2x -2]\nX-intercept(c) = -2 @ coordinates [0,-2]')
+print('3) Finding the X-intercept')
+print('Similarly, this is where the line [y = 2x -2] intercept the X-axis\nat y =0')
+print('Therefore from: y = 2x -2\n==0  = 2(x) -2 (where y=0)\n==0  = 2x - 2\n==2x = 2;\nTherefore the line the X-intercept = 1 @ coordinates [0,-2]')
+#Program Ran successfully!
+#Next
+print('Given that: Slope is (m = y2-y1/x2-x1).\nFind the slope and Euclidean distance between point (2, 2) and point (6,10)')
+#Finding slope at point (2, 2) and point (6,10)
+slope =(10-2)/(6-2)
+euc_dic = (((10-2)**2 + (6-2)**2))**0.5
+print('At point (2, 2) and point (6,10)\nSlope:',slope,'\nEucleadian distanse:', euc_dic)
+print('Is the previous slope(i.eslope_m) bigger than this last one?', slope_m >= slope)
