@@ -62,3 +62,12 @@ slope =(10-2)/(6-2)
 euc_dic = (((10-2)**2 + (6-2)**2))**0.5
 print('At point (2, 2) and point (6,10)\nSlope:',slope,'\nEucleadian distanse:', euc_dic)
 print('Is the previous slope(i.eslope_m) bigger than this last one?', slope_m >= slope)
+#Next
+#print('Find the length of 'python' and 'dragon' and make a falsy comparison statement')
+print('Length of python:', len('python'))
+print('Length of dragon:', len('dragon'))
+print('Is python less than dragon?:',len('python') < len('dragon'))
+#program ran successfully!
+#Next
+#Is "on: found in both 'python' and 'dragon'
+print( 'on' in 'python'and 'dragon') 
