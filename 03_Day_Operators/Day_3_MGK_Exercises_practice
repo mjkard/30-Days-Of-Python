@@ -108,3 +108,10 @@ print("So are they equal?:", type('10') == type(10))
 #Check if int('9.8') is equal to 10
 print("is int('9.8') is equal to 10", int(9.8) == 10)
 print('so what is int(9.8)=', int(9.8)) #The funciton int rounds down float values to the nearest whole number.
+#Write a script that prompts the user to enter number of years. Calculate the number of seconds a person can live. Assume a person can live hundred years
+#Write a script that prompts the user to enter number of years. Calculate the number of seconds a person can live. Assume a person can live hundred years
+print("How many seconds have you lived?")
+years_lived = int(input('How old are you now:'))
+seconds_lived = (years_lived * 365 *24 * 60 * 60)
+print('You have lived for:', seconds_lived, 'Alhamdulillah')
+
