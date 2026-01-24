@@ -1,0 +1,6 @@
+#Write a script that prompts the user to enter hours and rate per hour. Calculate pay of the person?
+hours =int(input('Type in your weekly working hours please:'))
+rate =float(input('type in your hourly earning rate please:'))
+currency = input('type in currency please:')
+weekly_earning = hours * rate 
+print('Your weekly income is:', weekly_earning, currency)
