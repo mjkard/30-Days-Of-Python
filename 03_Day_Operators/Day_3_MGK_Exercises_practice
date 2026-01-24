@@ -69,5 +69,42 @@ print('Length of dragon:', len('dragon'))
 print('Is python less than dragon?:',len('python') < len('dragon'))
 #program ran successfully!
 #Next
-#Is "on: found in both 'python' and 'dragon'
-print( 'on' in 'python'and 'dragon') 
+#Is "on": found in both 'python' and 'dragon'
+print( 'on' in ('python'and 'dragon')) #true
+#Next
+print("Is 'jargon' in 'I hope this course is not full of jargon",'jargon' in 'I hope this course is not full of jargon')
+#Next
+print("There is no 'on' in both dragon and python", 'on' not in ('dragon' and 'python'))
+#Identity operatior (is and is not) check two variables to see if they point to the same memory space 
+#Membership operators (in & not in) check to see if a value is a member of a certain list or collection e.g 'a' in 'apple', 
+#Next: Find the length of the text python and convert the value to float and convert it to string
+print('the lenght of python is:',len('python')
+python = 6
+print('Python turned to a float value is:', float(python))
+print('Pyhton turned into a string value is:', str(python))
+print('Comfirming stringness through duplication:', python*2)
+print('the length of python is:',len('python'))
+python = 6
+print('Python turned into a float value is:', float(python))
+print('Pyhton turned into a string value is:', str(python))
+print('Comfirming stringness through duplication:', str(python)*2)
+#Next: Even numbers are divisible by 2 and the remainder is zero. How do you check if a number is even or not using python?
+print('Short program to test evenness of any number')
+num =float(input("Type in a whole number please:"))
+print('Short program to test evenness of any number')
+num = int(input("Type in a whole number please:"))
+if num % 2 == 0:
+    print(num, 'is an even number')
+else:
+    print(num, 'is not an even number')
+#Check if the floor division of 7 by 3 is equal to the int converted value of 2.7.
+floor_div = 7 // 3
+print('The answer to the proposed floor division is:',floor_div)
+print('Integer converted value of 2.7 is:', int(2.7))
+print('So is 7//3 = int(2.7)', floor_div == int(2.7))
+#Check if type of '10' is equal to type of 10
+print("The respectives classes of '10' and 10 are:",type('10'), type(10))
+print("So are they equal?:", type('10') == type(10))
+#Check if int('9.8') is equal to 10
+print("is int('9.8') is equal to 10", int(9.8) == 10)
+print('so what is int(9.8)=', int(9.8)) #The funciton int rounds down float values to the nearest whole number.
