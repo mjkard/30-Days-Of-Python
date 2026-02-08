@@ -1,0 +1,90 @@
+#Concatenate the string 'Thirty', 'Days', 'Of', 'Python' to a single string, 'Thirty Days Of Python'.
+challenge = [ 'thirty', 'Days', 'of', 'Python']
+print(' '.join(challenge)) #thirty Days of Python
+#Concatenate the string 'Coding', 'For' , 'All' to a single string, 'Coding For All'.
+challenge = ['coding', 'For', 'All']
+print(' '.join(challenge)) #coding For All #Code_executed_successfully
+#Declare a variable named company and assign it to an initial value "Coding For All".
+company = "Coding for All"
+print(company) #code_successful
+#Print the length of the company string using len() method and print().
+print(len(company))
+#Change all the characters to uppercase letters using upper() method.
+print(company.upper()) #CODING FOR ALL
+Change all the characters to lowercase letters using lower() method.
+print(company.lower())
+#Use capitalize(), title(), swapcase() methods to format the value of the string Coding For All.
+print(company.(capitalize() #Coding for all
+print(company.swapcase()) #cODING FOR aLL
+#Cut(slice) out the first word of Coding For All string.
+print(company.strip('Coding')) # for All
+#Check if Coding For All string contains a word Coding using the method index, find or other methods.
+print(company.rfind('Coding')) #the zero[0] index
+print(company.index('Coding')) #the zero[0] index
+print(company.find('coding'))  #result is '-1' i.e doesn't exist because function is case sensitive to lower case of 'coding' which isn't contained in 'Coding..' that uses an upper case.
+#Replace the word coding in the string 'Coding For All' to Python.
+print(company.replace('Coding','Python')) #Python for All
+#Change "Python for Everyone" to "Python for All" using the replace method or other methods.
+challenge = 'Python for Everyone'
+print(challenge)
+print(challenge.replace('Everyone','All')) #success
+#Split the string 'Python For All' using space as the separator (split()) .
+print((challenge.replace('Everyone', 'All')).split())
+#"Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon" split the string at the comma.
+string = "Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon" 
+print(string.split(', ')) #result:['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+#What is the character at index 0 in the string Coding For All.
+challenge = 'Coding for All'
+print(challenge[0]) #result: 'C'
+#What is the last index of the string Coding For All.
+print(challenge[-1]) #result 'l'
+#What character is at index 10 in "Coding For All" string.
+print(challenge[10]) #result: ' ' (i.e empty space)
+#Create an acronym or an abbreviation for the name 'Python For Everyone'.
+PFE = 'Python For Everyone'
+print(PFE) #success
+#Create an acronym or an abbreviation for the name 'Coding For All'.
+CFE = 'Coding For All'
+print(CFE)
+#Use index to determine the position of the first occurrence of C in Coding For All.
+print(CFE.index('C')) #success
+#Use index to determine the position of the first occurrence of F in Coding For All.
+print(CFE.index('F')) #success
+#Use rfind to determine the position of the last occurrence of l in Coding For All People.
+print(CFE.rfind('l')) #success
+#Use index or find to find the position of the first occurrence of the word 'because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+sentence = 'You cannot end a sentence with because because because is a conjunction'
+print(sentence.find('because')) #success
+Use rindex to find the position of the last occurrence of the word because in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+sentence = 'You cannot end a sentence with because because because is a conjunction'
+print(sentence.rfind('because')) #result: 47
+#Slice out the phrase 'because because because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+s = 'You cannot end a sentence with because because because is a conjunction'
+print(s.find('because'))
+print(s.index('because'))
+print(s.rfind('e'))
+print(s[31:54])
+#Does 'Coding For All' start with a substring Coding?
+string = 'Coding for All'
+print(string.startswith('Coding')) #True
+print(string.endswith('Coding'))   #False
+#'   Coding For All      '  , remove the left and right trailing spaces in the given string.
+string = '   Coding For All      '
+print(string, len(string)) #length -23
+#to_delete_trailing_spaces
+print(string.strip(' '))
+print(len(string.strip(' '))) #success: length-14
+#Which one of the following variables return True when we use the method isidentifier():
+30DaysOfPython #False
+thirty_days_of_python #True
+#The following list contains the names of some of python libraries: ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']. Join the list with a hash with space string.
+list = ['Django','Flask','Bottle', 'Pyramid', 'Falcon']
+print('# '.join(list)) #success
+#Using a new line escape sequence to separate given sentences.
+print('''I am enjoying this challenge.
+I just wonder what is next.''') #success
+#Using a new line escape sequence to separate given sentences.
+data_tab = '''Name\tAge\tCountry\tCity
+Asabeneh\t250\tFinland\tHelsinki'''
+print(data_tab.expandtabs(12))
+#Use the string formatting method to display a following information:
