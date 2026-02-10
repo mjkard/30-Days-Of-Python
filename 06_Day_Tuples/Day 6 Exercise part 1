@@ -16,3 +16,8 @@ family_members = list(siblings)
 family_members[0:0] = ['Mother','Father']
 family_members = tuple(family_members)
 print(f'My family members are: {family_members}')
+#Unpack siblings and parents from family_members
+parent1, parent2, *siblings = family_members
+siblings = tuple(siblings)
+parents = (parent1) , (parent2)
+print(f'My parents are: {parents}\n and my siblings are: {siblings}')
