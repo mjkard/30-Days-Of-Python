@@ -1,0 +1,18 @@
+#Create an empty tuple
+empty_tuple = tuple()
+print(empty_tuple) #success
+#Create a tuple containing names of your sisters and your brothers (imaginary siblings are fine)
+brothers = ('big bro','little bro')
+sisters = ('big sis', 'little sis')
+#Join brothers and sisters tuples and assign it to siblings
+siblings = brothers + sisters
+print(f'A tuple list of my siblings is {siblings}')
+#How many siblings do you have?
+siblings_no = len(siblings)
+print(f'I have {siblings_no} siblings in total.')
+#Modify the siblings tuple and add the name of your father and mother and assign it to family_members
+print("The trick I'll employ to modify a tuple (which you can't do directly)\n is to convert it to a list first, modify, and then change it back")
+family_members = list(siblings)
+family_members[0:0] = ['Mother','Father']
+family_members = tuple(family_members)
+print(f'My family members are: {family_members}')
