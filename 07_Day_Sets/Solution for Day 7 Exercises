@@ -1,0 +1,75 @@
+# sets
+#it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
+#A = {19, 22, 24, 20, 25, 26}
+#B = {19, 22, 20, 25, 26, 24, 28, 27}
+#age = [22, 19, 24, 25, 26, 24, 25, 24]
+it_companies = {'Facebook','Google','Microsoft','Apple','IBM','Oracle','Amazon'}
+A = {19, 22, 24, 20, 25, 26}
+B = {19, 22, 20, 25, 26, 24, 28, 27}
+age = [22, 19, 24, 25, 26, 24, 25, 24]
+#Level_1
+#Find the length of the set it_companies
+print('Length of the set of IT Companies is: ', len(it_companies))
+#Add 'Twitter' to it_companies
+it_companies.add('Twitter')
+print('Twitter has been added, check: ', it_companies)
+#Insert multiple IT companies at once to the set it_companies
+print('current list/set of companies: ', it_companies)
+it_companies.update(('Vodafone','Blackberry','Xiaomi'))
+print('\nMore companies have been added, check: ', it_companies)
+#Remove one of the companies from the set it_companies
+remove_1 = it_companies.pop()
+print(f'\n{remove_1} has been removed from the set of IT companies, check:', it_companies)
+#What is the difference between remove and discard
+print('''\nThe difference between the method .remove() and .discard() is that,
+remove() returns a Key_error if the argument given cannot be found while .discard() doesn't break the code
+i.e .discard is forgiving when item doesn't exist while 
+.remove() should be implemented when the item is meant to be in existance except the code has error in its logic''')
+#Level_2
+print(f'set A is: {A}\nset B is: {B}')
+#Join A and B    
+print(f'Joining set A and B = ', A | B)
+#Find A intersection B
+print('The intersection between A & B is:', A.intersection(B))
+#Is A subset of B
+print('Is A subset of B: ', A.issubset(B))
+#Are A and B disjoint sets
+print('Are A and B disjoint sets:', A.isdisjoint(B))
+#Join A with B and B with A
+AuB = A | B
+BuA = B | A
+print(f'Joining A with B = {AuB}\n and B with A ={BuA}')
+#What is the symmetric difference between A and B
+print('What is the symmetric difference between A and B: ',A.symmetric_difference(B))
+#Delete the sets completely
+del A
+del B
+#print( A, B) will give an error
+#Level_3
+#Convert the ages to a 'List' and compare the length of the list and the set, which one is bigger?
+A = list(A)
+B = list(B)
+print('Converted set A to list: {A},\nand set B to list: {B}')
+print('length of A is:', len(A),'\n and length of B is:', len(B))
+if len(A)>len(B):
+    print('Therefore, ist A is bigger than B')
+else:
+        print('Therefore list B is bigger than A') #Success!!!!
+#Explain the difference between the following data types: string, list, tuple and set
+print('''The difference between: String\tList\tTuple\tSet\t is that:
+A string is just a data type that takes characters, it is immutable;
+A List is a collection of data types using [square-brackets] that accepts duplicates, it is mutable, and indexed/ordered;
+A Tuple is also a collection of data types using (curve-brackets) which is also accepts duplicate entries, it is indexed/ordered but not mutable; while
+A Set is a data type collection using {curly-brackets} which is not indexed/unordered, and is a 'mutable' container that holds 'immutable' elements..''')
+#empty_space
+#I am a teacher and I love to inspire and teach people. How many unique words have been used in the sentence? Use the split methods and set to get the unique words.
+print('sentence: I am a teacher and I love to inspire and teach people.\n')
+sentence = 'I am a teacher and I love to inspire and teach people'
+print('Using split method we get: ', sentence.split())
+sentence = set(sentence.split())
+print('\nNo. of unique words is: ', len(sentence))
+print(f'\nThere for as a set the unique words are: {sentence}')
+#Challenge done! and dusted!!!
+
+
+
