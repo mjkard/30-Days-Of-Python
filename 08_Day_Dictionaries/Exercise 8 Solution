@@ -1,0 +1,43 @@
+#Create an empty dictionary called dog
+dog = {}
+#Add name, color, breed, legs, age to the dog dictionary
+dog['name'] = 'spike'
+dog['color'] = 'white'
+dog['breed'] = 'pittbull'
+dog['legs'] = 4
+dog['age'] = '2 yrs'
+print('My dog stats: ', dog)
+#Create a student dictionary and add first_name, last_name, gender, age, marital status, skills, country, city and address as keys for the dictionary
+student = {'first_name': 'Mamman','last_name':'Sayidi','gender':'male','age':26,'marital_status':'single', 'skills': ['engineer','bodybuilder','writer','orator','software developer'],'country':'Germany','City':'Berlin', 'address': {'street':'kings_street', 'House no.': 'block_007',  'zipcode' : 22499}}
+print(f'\nStudent_stats are: {student}')
+#Get the length of the student dictionary
+print('\nStudent data size is: ', len(student))
+#Modify the skills values by adding one or two skills
+student['skills'].extend(['entrepreneurship','swimmer'])
+print('\nThe new student skill list is:', student['skills'])
+#Get the dictionary keys as a list
+dog_keys = list(dog.keys())
+student_keys = list(student.keys())
+print(f'''\nThe keys of the individual dictionaries,respectively, are:
+
+Keys of dog: {dog_keys}
+
+keys of Student: {student_keys}''')
+#Get the dictionary values as a list
+dog_values = list(dog.values())
+student_values = list(student.values())
+print(f''''Similarly; \nThe values of the individual dictionaries,respectively, are:
+
+values of dog: {dog_values}
+
+values of Student: {student_values}''')
+#Change the dictionary to a list of tuples using items() method
+dog_tuple = dog.items()
+student_tuple = tuple(student.items())
+print(f'The data for dog as a list of tuples is: {dog_tuple}\nAnd the data for student as a list of tuples is: {student_tuple}')
+#Delete one of the items in the dictionary
+del student['marital_status']
+print('"marital status" has been deleted from student data, confirm: ', student)
+#Delete one of the dictionaries
+del dog
+#print(dog) will return an error
