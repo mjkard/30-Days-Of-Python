@@ -1,0 +1,38 @@
+#Get user input using input(“Enter your age: ”). If user is 18 or older, give feedback: You are old enough to drive. If below 18 give feedback to wait for the missing amount of years. Output:
+#output-Enter your age: 30
+#You are old enough to learn to drive.
+#Output:
+#Enter your age: 15
+#You need 3 more years to learn to drive.
+age = input('Enter your age please: ')
+age = int(age)
+more = 18 - age
+if age >= 18:
+    print('You are old enough to drive.')
+else:
+    print(f'You need {more} more years to learn to drive.') #success
+#Compare the values of my_age and your_age using if … else. Who is older (me or you)? Use input(“Enter your age: ”) to get the age as input. You can use a nested condition to print 'year' for 1 year difference in age, 'years' for bigger differences, and a custom text if my_age = your_age. Output:
+age = input('I am 20 years old, how old are you?\n Enter your age please: ')
+your_age = int(age)
+my_age = 25
+d = your_age-my_age
+if d == 1:
+    print('You are older than me by 1 year!')
+elif d> 1:
+    print(f'You are older than me by {d} years !')
+elif d == 0:
+    print('We are the same age!')
+elif d == -1:
+    print('I am older than you by one year!')
+else:
+    print(f'I am older than you by {abs(d)} years!')
+#Get two numbers from the user using input prompt. If a is greater than b return a is greater than b, if a is less b return a is smaller than b, else a is equal to b. Output:
+print('Code for comparing two numbers')
+a = int(input('enter first number:'))
+b = int(input('enter second number: '))
+if a > b:
+    print(f'{a} is greater than {b}')
+elif a == b:
+    print(f'the two numbers are equal!')
+else:
+    print(f'{a} is less than {b}') #success!
