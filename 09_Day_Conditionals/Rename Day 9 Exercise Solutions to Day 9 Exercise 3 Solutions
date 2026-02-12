@@ -11,15 +11,16 @@ person = {
 'zipcode':'02210'}}
 print(person)
 #Check if the person dictionary has skills key, if so print out the middle skill in the skills list.
+print('Prompt: Check if the person dictionary has skills key, if so print out the middle skill in the skills list.\n' )
 if 'skills' in person:
-    middle = len(person['skills']) // 2
-    print('The middle skill is: ', person['skills'][middle])
+    middle = person['skills'][len(person.get('skills', [])) // 2]
+    print('Yes it does, and the middle skill is: ', middle)
 else:
     print('Skills not included in personal data')
 
 # Check if the person dictionary has skills key, if so check if the person has 'Python' skill and print out the result.
-if 'Python' in person.get('skills',[]): 
-    print('Yes, check: ', person.get('skills'))
+if 'Python' in (x := (person.get('skills',[]))): 
+    print('Yes, check: ', x)
 else:
     print('item not found')
 #If a person skills has only JavaScript and React, print('He is a front end developer'), if the person skills has Node, Python, MongoDB, print('He is a backend developer'), if the person skills has React, Node and MongoDB, Print('He is a fullstack developer'), else print('unknown title') - for more accurate results more conditions can be nested!
@@ -38,7 +39,6 @@ else:
  #If the person is married and if he lives in Finland, print the information in the following format:
 #Asabeneh Yetayeh lives in Finland. He is married.
 print('Data matching for people married and living in Finland')
-print(f'''Data matching for people married and living in Finland''')
 if person.get('is_married') and person.get('country') == 'Finland':
     print(f'''{person.get('first_name')} {person.get('last_name')} lives in {person.get('country')}. He is married''')
 else:
