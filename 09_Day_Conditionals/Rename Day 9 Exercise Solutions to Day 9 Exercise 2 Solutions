@@ -35,21 +35,21 @@ elif month in spring:
 elif month in summer:
    print('The season is Summer')
 else:
-   print('Try again, possible typo ditected') #success
+   print('Possible typo ditected, try again') #success
 #Next Challenge
 #The following list contains some fruits:
 #fruits = ['banana', 'orange', 'mango', 'lemon']
 #If a fruit doesn't exist in the list add the fruit to the list
 #and print the modified list. If the fruit exists 
 #print('That fruit already exist in the list')
-fruits = ['banana', 'orange', 'mango','lemon']
-print('Current fruit list: ', fruits)
+fruits = {'banana', 'orange', 'mango','lemon'}
+print('Current fruit list: ', sorted(fruits))
 x_fruit = input('Type a fruit: ').lower().strip()
 if x_fruit in fruits:
     print('The fruit already exist in the list')
 else:
-    fruits.append(x_fruit)
-    print(f'New fruit list is: {fruits}') 
+    fruits.add(x_fruit)
+    print(f'New fruit list is: {sorted(fruits)}') 
 
 
 
