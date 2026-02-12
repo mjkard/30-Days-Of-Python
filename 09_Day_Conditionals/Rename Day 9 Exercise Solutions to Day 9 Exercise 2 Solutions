@@ -1,0 +1,55 @@
+#Write a code which gives grade to students according to theirs scores:
+#90-100, A
+#80-89, B
+#70-79, C
+#60-69, D
+#0-59, F
+print('~University Grade Allocator~')
+score = int(input('Please enter your score: '))
+if score >= 90:
+    print('Your grade is A, weldone!')
+elif 80 <= score <= 89:
+    print('Your grade is B')
+elif 70 <= score <= 79:
+    print('Your grade is C')
+elif 60 <= score <= 69:
+    print('Your grade is D')
+else:
+   print('You failed, your grade is F') #success
+#Get the month from user input then check if the season is Autumn, Winter,
+#Spring or Summer. If the user input is: September, October or November, the
+#season is Autumn. December, January or February, the season is Winter.
+#March, April or May, the season is Spring June, July or August, the season is Summer
+print('Tell me the month, I will tell you the season')
+month = input('Type in the month: ').lower().strip()
+autumn = {'september', 'october', 'november'}
+winter = {'december', 'january', 'february'}
+spring = {'march', 'april', 'may'}
+summer = {'june','july','august'}
+if month in autumn:
+    print('The season is Autumn')
+elif month in winter:
+    print('The season is Winter')
+elif month in spring:
+    print('The season is Spring!')
+elif month in summer:
+   print('The season is Summer')
+else:
+   print('Try again, possible typo ditected') #success
+#Next Challenge
+#The following list contains some fruits:
+#fruits = ['banana', 'orange', 'mango', 'lemon']
+#If a fruit doesn't exist in the list add the fruit to the list
+#and print the modified list. If the fruit exists 
+#print('That fruit already exist in the list')
+fruits = ['banana', 'orange', 'mango','lemon']
+print('Current fruit list: ', fruits)
+x_fruit = input('Type a fruit: ').lower().strip()
+if x_fruit in fruits:
+    print('The fruit already exist in the list')
+else:
+    fruits.append(x_fruit)
+    print(f'New fruit list is: {fruits}') 
+
+
+
