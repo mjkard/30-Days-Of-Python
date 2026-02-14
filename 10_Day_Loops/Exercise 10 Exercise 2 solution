@@ -1,0 +1,37 @@
+#Use for loop to iterate from 0 to 100 and print the sum of all numbers.
+print('1) Simply summing the range with built in sum function')
+total = sum(range(1,101))
+print(f'The sum of all numbers is: {total}')
+print('\n 2) Using a for loop to get the sum i.e.The Conveyor belt method')
+numbers = range(101)
+bucket = 0
+for number in numbers:
+    bucket+= number
+print(f'The sum of all numbers is: {bucket}')
+print('\n3) Using a while loop to get the sum i.e.The Manual sack pilling method')
+digits = 100
+sack = 0
+while digits !=0:
+    sack += digits
+    digits = digits - 1
+print(f'The sum of all numbers is: {sack}\n')
+print('4)Finally, the most optimal efficient method i.e.Gaus range summation method:AkA PURE MATH method')
+n = 100
+range_sum = n*(n +1)//2
+print('The sum of all numbers is: ',range_sum)
+#Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
+#The sum of all evens is 2550. And the sum of all odds is 2500.
+numbers = range(101)
+bucket = 0
+sack = 0
+for number in numbers:
+    if number % 2 == 0:
+        bucket += number
+    else:
+        sack += number
+result = {'even':bucket,'odd':sack}
+print(f'The sum of all odd numbers in a range of 100 is:{sack}\nand the sum of all even numbers is {bucket}')
+print(f'In summary the result is: {result}')
+
+
+
