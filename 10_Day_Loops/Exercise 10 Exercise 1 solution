@@ -1,0 +1,98 @@
+#Iterate 0 to 10 using for loop, do the same using while loop.
+print('Using a for loop:')
+for i in range(11):
+    print(i)
+print('Using a while loop:')
+i = 0
+while i < 11 :
+    print(i)
+    i += 1
+#Iterate 10 to 0 using for loop, do the same using while loop.
+print('Using for loop:')
+for i in range(10,-1,-1):
+   print(i)
+print('Using while loop')
+i = 10
+while i >= 0:
+   print(i)
+   i -= 1
+#Write a loop that makes seven calls to print(), so we get on the output the following triangle:
+print('Using for loop')
+hash = '#'
+for i in range(1,8):
+    print(hash*i)
+print('using while loop:')
+count = 1
+while count <8:
+    print('#'* count)
+    count += 1
+#Use nested loops to create the following:
+# # # # # # # #
+# # # # # # # #
+# # # # # # # #
+# # # # # # # #
+# # # # # # # #
+# # # # # # # #
+# # # # # # # #
+# # # # # # # #
+print('~Using Nested for loop to create a square-hash-pyramid~')
+for i in range(8):           # This handles the Rows
+    for j in range(8):       # This handles the Columns
+        print('#', end =' ') # 'end' keeps the print on the same line
+    print()                  # Now we manually hit 'Enter' for the next row
+#Print the following pattern:
+#0 x 0 = 0
+#1 x 1 = 1
+#2 x 2 = 4
+#3 x 3 = 9
+#4 x 4 = 16
+#5 x 5 = 25
+#6 x 6 = 36
+#7 x 7 = 49
+#8 x 8 = 64
+#9 x 9 = 81
+#10 x 10 = 100
+print('~Creating the Times Table to multiples of 10~')
+table = range(11)
+for i in table:
+    print(f'{i} x {i} = {i**2}')
+print('~ Multiplication Table in Two Blocks ~')
+print('\n')
+for row in range(1,11):
+    for col in range (1,6):
+        print(f'{col} x {row} = {(col*row)}', end= '\t')
+    print()
+print('\n'+'_'*70+'\n')
+for row in range(1,11):
+    for col in range (6,11):
+        print(f'{col} x {row} = {col*row}', end= '\t')
+    print()  
+#Iterate through the list, ['Python', 'Numpy','Pandas','Django', 'Flask'] using a for loop and print out the items.
+programs = ['Python','Numpy','Pandas','Django','Flask']
+for program in programs:
+    print(program)
+#Use for loop to iterate from 0 to 100 and print only even numbers
+numbers = range(0,101)
+for number in numbers:
+    if number % 2 == 0:
+        print(number)
+print('Total even numbers of the range printed')
+print('\nVersion 2: a more efficient and cleaner code by simply adding a third argument-step to range function:')
+numbers = range(0,101,2)
+for number in numbers:
+    print(number)
+#Use for loop to iterate from 0 to 100 and print only odd numbers
+print('Odd numbers from 0 to 100')
+numbers = range(101)
+for number in numbers:
+    if number % 2 != 0:
+        print(number)
+print('\n Version 2: Cleaner and Robust:')
+figures = range(1,101,2)
+for odd in figures:
+    print(odd)
+
+
+
+
+
