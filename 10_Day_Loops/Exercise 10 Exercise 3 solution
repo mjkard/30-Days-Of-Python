@@ -1,0 +1,275 @@
+#Go to the data folder and use the countries.py file. Loop through the countries and extract all the countries containing the word land.
+print('Country Data analysis')
+countries = [
+  'Afghanistan',
+  'Albania',
+  'Algeria',
+  'Andorra',
+  'Angola',
+  'Antigua and Barbuda',
+  'Argentina',
+  'Armenia',
+  'Australia',
+  'Austria',
+  'Azerbaijan',
+  'Bahamas',
+  'Bahrain',
+  'Bangladesh',
+  'Barbados',
+  'Belarus',
+  'Belgium',
+  'Belize',
+  'Benin',
+  'Bhutan',
+  'Bolivia',
+  'Bosnia and Herzegovina',
+  'Botswana',
+  'Brazil',
+  'Brunei',
+  'Bulgaria',
+  'Burkina Faso',
+  'Burundi',
+  'Cabo Verde',
+  'Cambodia',
+  'Cameroon',
+  'Canada',
+  'Central African Republic',
+  'Chad',
+  'Chile',
+  'China',
+  'Colombia',
+  'Comoros',
+  'Congo, Democratic Republic of the',
+  'Congo, Republic of the',
+  'Costa Rica',
+  "Côte d'Ivoire",
+  'Croatia',
+  'Cuba',
+  'Cyprus',
+  'Czech Republic',
+  'Denmark',
+  'Djibouti',
+  'Dominica',
+  'Dominican Republic',
+  'East Timor (Timor-Leste)',
+  'Ecuador',
+  'Egypt',
+  'El Salvador',
+  'Equatorial Guinea',
+  'Eritrea',
+  'Estonia',
+  'Eswatini',
+  'Ethiopia',
+  'Fiji',
+  'Finland',
+  'France',
+  'Gabon',
+  'Gambia',
+  'Georgia',
+  'Germany',
+  'Ghana',
+  'Greece',
+  'Grenada',
+  'Guatemala',
+  'Guinea',
+  'Guinea-Bissau',
+  'Guyana',
+  'Haiti',
+  'Honduras',
+  'Hungary',
+  'Iceland',
+  'India',
+  'Indonesia',
+  'Iran',
+  'Iraq',
+  'Ireland',
+  'Israel',
+  'Italy',
+  'Jamaica',
+  'Japan',
+  'Jordan',
+  'Kazakhstan',
+  'Kenya',
+  'Kiribati',
+  'Korea, North',
+  'Korea, South',
+  'Kuwait',
+  'Kyrgyzstan',
+  'Laos',
+  'Latvia',
+  'Lebanon',
+  'Lesotho',
+  'Liberia',
+  'Libya',
+  'Liechtenstein',
+  'Lithuania',
+  'Luxembourg',
+  'Madagascar',
+  'Malawi',
+  'Malaysia',
+  'Maldives',
+  'Mali',
+  'Malta',
+  'Marshall Islands',
+  'Mauritania',
+  'Mauritius',
+  'Mexico',
+  'Micronesia',
+  'Moldova',
+  'Monaco',
+  'Mongolia',
+  'Montenegro',
+  'Morocco',
+  'Mozambique',
+  'Myanmar',
+  'Namibia',
+  'Nauru',
+  'Nepal',
+  'Netherlands',
+  'New Zealand',
+  'Nicaragua',
+  'Niger',
+  'Nigeria',
+  'North Macedonia',
+  'Norway',
+  'Oman',
+  'Pakistan',
+  'Palau',
+  'Palestine',
+  'Panama',
+  'Papua New Guinea',
+  'Paraguay',
+  'Peru',
+  'Philippines',
+  'Poland',
+  'Portugal',
+  'Qatar',
+  'Romania',
+  'Russia',
+  'Rwanda',
+  'Saint Kitts and Nevis',
+  'Saint Lucia',
+  'Saint Vincent and the Grenadines',
+  'Samoa',
+  'San Marino',
+  'Sao Tome and Principe',
+  'Saudi Arabia',
+  'Senegal',
+  'Serbia',
+  'Seychelles',
+  'Sierra Leone',
+  'Singapore',
+  'Slovakia',
+  'Slovenia',
+  'Solomon Islands',
+  'Somalia',
+  'South Africa',
+  'South Sudan',
+  'Spain',
+  'Sri Lanka',
+  'Sudan',
+  'Suriname',
+  'Sweden',
+  'Switzerland',
+  'Syria',
+  'Tajikistan',
+  'Tanzania',
+  'Thailand',
+  'Togo',
+  'Tonga',
+  'Trinidad and Tobago',
+  'Tunisia',
+  'Turkey',
+  'Turkmenistan',
+  'Tuvalu',
+  'Uganda',
+  'Ukraine',
+  'United Arab Emirates',
+  'United Kingdom',
+  'United States',
+  'Uruguay',
+  'Uzbekistan',
+  'Vanuatu',
+  'Vatican City',
+  'Venezuela',
+  'Vietnam',
+  'Yemen',
+  'Zambia',
+  'Zimbabwe'
+];
+print('combing through countries wih "-land" in their name')
+land_countries = []
+for country in countries:
+    if 'land' in country.lower():
+        land_countries.append(country)
+print(f'The {len(land_countries)} countries with -land are: {land_countries}')
+#This is a fruit list, ['banana', 'orange', 'mango', 'lemon'] reverse the order using loop.
+fruits = ['banana', 'orange', 'mango', 'lemon']
+print(f'The original list is: {fruits}')
+reversed_fruit = []
+for i in range(len(fruits)-1, -1, -1):  #range takes three arguments (start, last, step)
+    reversed_fruit.append(fruits[i])
+print(f'The reversed list is: {reversed_fruit}')
+#Go to the data folder and use the countries_data.py file.
+#What are the total number of languages in the data
+x = list()
+for i in data:
+     x.extend(i['languages'])
+x = set(x)
+print('The number of unique languages', len(x))
+#Find the ten most spoken languages from the data
+tongues = list()
+for i in data:
+    tongues.extend(i['languages'])
+#print(f'Number of languages are {len(tongues)} and the total languages spoken are:{sorted(tongues)}')
+counter = {}
+for l in tongues:
+    if l in counter:
+        counter[l] += 1
+    else:
+        counter[l] = 1
+
+#print(counter)
+counter = sorted (counter.items(), key = lambda x: x[1], reverse = True)
+print(f'The ranking of languages are:{counter}')
+top_tongues = counter[:10]
+place = 1
+for tongue, count in top_tongues:
+    print(f'Position {place}) {tongue} spoken in: \t {count} countries'.expandtabs(13))
+    place += 1
+#Find the 10 most populated countries in the world
+print('Find the 10 most populated countries in the world')
+country = list()
+population = list()
+for i in data:
+    country.append(i["name"])
+    population.append(i['population'])
+    count_pop = zip(country,population)
+count_pop = dict(count_pop)
+count_pop = sorted(count_pop.items(), key = lambda x:x[1], reverse = True)
+count_pop = count_pop[:10]
+print('The 10 most populated countries are:')
+count = 1
+for country, population in count_pop:
+    print(f'Position {count}) {country} with {population} people')
+    count += 1
+#version 2
+print('Find the 10 most populated countries in the world')
+country = list()
+population = list()
+x ={}
+for i in data:
+    x[i['name']] = i['population']
+x = sorted(x.items(), key = lambda x:x[1], reverse = True)
+x = x[:10]
+print(f'The 10 most populated countries are:',x)
+count = 1
+for country, population in x:
+    print(f'Position {count})  {country} with\t {population:,} people')
+    count += 1
+
+
+
+
+
+
